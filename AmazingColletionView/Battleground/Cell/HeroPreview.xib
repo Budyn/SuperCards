@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeroPreview" customModule="AmazingColletionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="yq5-b4-AD8">
+                    <rect key="frame" x="4" y="4" width="181.5" height="659"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-XL-kDN">
+                    <rect key="frame" x="189.5" y="4" width="181.5" height="659"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bky-XL-kDN" firstAttribute="leading" secondItem="yq5-b4-AD8" secondAttribute="trailing" constant="4" id="3W3-Cu-Utc"/>
+                <constraint firstItem="yq5-b4-AD8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="6YW-ks-FxB"/>
+                <constraint firstItem="yq5-b4-AD8" firstAttribute="width" secondItem="Bky-XL-kDN" secondAttribute="width" id="A0G-0A-HkZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bky-XL-kDN" secondAttribute="bottom" constant="4" id="BQS-jS-gAc"/>
+                <constraint firstItem="yq5-b4-AD8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="EI5-YL-FlY"/>
+                <constraint firstAttribute="trailing" secondItem="Bky-XL-kDN" secondAttribute="trailing" constant="4" id="P9F-sN-jQ1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yq5-b4-AD8" secondAttribute="bottom" constant="4" id="Tge-HO-REX"/>
+                <constraint firstItem="Bky-XL-kDN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="jK3-Je-u3Z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="frontImageView" destination="Bky-XL-kDN" id="6ao-ts-ywx"/>
+                <outlet property="imageView" destination="yq5-b4-AD8" id="GBg-fk-83p"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-384.5"/>
+        </view>
+    </objects>
+</document>
